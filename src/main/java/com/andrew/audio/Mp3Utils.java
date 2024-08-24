@@ -60,6 +60,7 @@ public final class Mp3Utils {
 
 			String minutes = String.valueOf(min);
 			String seconds = String.valueOf(sec);
+			if (seconds.length() == 1) seconds = "0" + seconds;
 
 			return minutes + ":" + seconds;
 		} catch (IOException e) {
